@@ -5,6 +5,8 @@
  */
 package objects;
 
+import java.util.Random;
+
 /**
  *
  * @author S545232
@@ -120,9 +122,55 @@ public class StringsAndNumbers {
         double result = (result1 * result2) / result3;
         System.out.println("The value of given equation is: " + result);
 
-        
-        
         //4
         System.out.println("******** Random Class ********");
+
+        //4.a
+        Random random = new Random();
+        int random1 = random.nextInt(200);
+        System.out.println("4 pseudo-random integer values between 0 (inclusive) and 200 (exclusive)");
+        System.out.println("First random integer value is: " + random1 + " Square of " + random1 + " is: " + (int) Math.pow(random1, 2));
+
+        int random2 = random.nextInt(200);
+        System.out.println("Second random integer value is: " + random2 + " Square of " + random2 + " is: " + (int) Math.pow(random2, 2));
+
+        int random3 = random.nextInt(200);
+        System.out.println("Third random integer value is: " + random3 + " Square of " + random3 + " is: " + (int) Math.pow(random3, 2));
+
+        int random4 = random.nextInt(200);
+        System.out.println("Fourth random integer value is: " + random4 + " Square of " + random4 + " is: " + (int) Math.pow(random4, 2));
+
+        //4.b
+        System.out.println("I didn't get the same rusult, Everytime results are changing");
+
+        //4.c
+        Random randomNew = new Random(30);
+        int random5 = random.nextInt(200);
+        System.out.println("4 pseudo-random integer values between 0 (inclusive) and 200 (exclusive)");
+        System.out.println("First random integer value is: " + random5 + " Square of " + random5 + " is: " + (int) Math.pow(random5, 2));
+
+        int random6 = random.nextInt(200);
+        System.out.println("Second random integer value is: " + random6 + " Square of " + random6 + " is: " + (int) Math.pow(random6, 2));
+
+        int random7 = random.nextInt(200);
+        System.out.println("Third random integer value is: " + random7 + " Square of " + random7 + " is: " + (int) Math.pow(random7, 2));
+
+        int random8 = random.nextInt(200);
+        System.out.println("Fourth random integer value is: " + random8 + " Square of " + random8 + " is: " + (int) Math.pow(random8, 2));
+
+        int random9 = random.nextInt();
+        System.out.println("Fifth random integer value is: " + random9 + " Square of " + random9 + " is: " + (int) Math.pow(random9, 2));
+
+        int random10 = random.nextInt();
+        System.out.println("Sixth random integer value is: " + random10 + " Square of " + random10 + " is: " + (int) Math.pow(random10, 2));
+
+        int random11 = random.nextInt();
+        System.out.println("Seventh random integer value is: " + random11 + " Square of " + random11 + " is: " + (int) Math.pow(random11, 2));
+
+        //4.d
+        System.out.println("I didn't get the same rusult, Everytime results are changing");
+        
+        //4.e
+        System.out.println("Results comparison from b) and d) and explain the difference: I didn't get the same rusult, Everytime results are changing");
     }
 }
