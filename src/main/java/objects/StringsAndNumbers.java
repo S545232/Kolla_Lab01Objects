@@ -16,7 +16,7 @@ public class StringsAndNumbers {
     public static void main(String[] args) {
 
         //1
-        System.out.println("******** String Class ********");
+        System.out.println("*** String Class ***");
 
         //1.a
         String string1 = "  Welcome    ";
@@ -56,7 +56,7 @@ public class StringsAndNumbers {
         String oopString = "Object-Oriented-Programming 44542";
         System.out.println(oopString);
         oopString = oopString.replaceAll("-", "_");
-        oopString = oopString.replaceAll("\\s+", "_");
+        oopString = oopString.replaceAll("\\s+", "-");
         System.out.println(oopString);
 
         //2.c
@@ -71,7 +71,7 @@ public class StringsAndNumbers {
         System.out.println("I want to work in product based companies in mobile computing by using Data Structures and Machine Learning concepts, Northwest Missouri State University teaching both those subjects.");
 
         //3
-        System.out.println("******** Math Class ********");
+        System.out.println("*** Math Class ***");
 
         //3.a.i
         int value1 = 9;
@@ -113,7 +113,7 @@ public class StringsAndNumbers {
         System.out.println("Rounded Value of cos 45: " + Math.round(Math.round(Math.cos(myNumber1))));
         System.out.println("Rounded Value of cos 27: " + Math.round(Math.round(Math.cos(myNumber2))));
         System.out.println("Rounded Value of tan 45: " + Math.round(Math.round(Math.tan(myNumber1))));
-        System.out.println("Rounded Value of tan 45: " + Math.round(Math.round(Math.tan(myNumber2))));
+        System.out.println("Rounded Value of tan 27: " + Math.round(Math.round(Math.tan(myNumber2))));
 
         //3.b
         double result1 = Math.abs(8 * Math.cos(myNumber2));
@@ -123,7 +123,7 @@ public class StringsAndNumbers {
         System.out.println("The value of given equation is: " + result);
 
         //4
-        System.out.println("******** Random Class ********");
+        System.out.println("*** Random Class ***");
 
         //4.a
         Random random = new Random();
